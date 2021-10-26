@@ -1,22 +1,30 @@
-package OCT20;
+
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 import javax.swing.JOptionPane;
+
 public class Main {
     
     public static void main(String[] args) {
 
-        LocalDate toDay = LocalDate.now();
-              
+    
+           Human objHuman = new Human();
+               objHuman.setName(JOptionPane.showInputDialog(null, "Enter Your Name"));
 
-           Human student1 = new Human("Sam", 1988, 8.9);
-               student1.setName(JOptionPane.showInputDialog(null, "Enter Name"));
-               int dateOfBirth = Integer.parseInt( student1.setDateOfBirth(JOptionPane.showInputDialog(null, "Enter Date of birth")));
+               DateTimeFormatter formatBr = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+               String dateOfBirth = JOptionPane.showInputDialog(null, "Enter Your Date Of Birth");
+               objHuman.setDateOfBirth(LocalDate.parse(dateOfBirth,formatBr));
+
+               objHuman.setHeight(Double.parseDouble(JOptionPane.showInputDialog(null, "Enter Your Height")));
+               
+
+
 
 
 
            
-           System.out.println(); student1.printdetails(); 
+           
 
            
            
