@@ -1,0 +1,70 @@
+/*Here is my explanation of my OOP exercise 
+
+Create a class to represent a person, with the private attributes of name, date of birth and height;
+Create the necessary public methods for sets and gets, and also a method to return all of a person's data;
+Create a method to calculate the person's age;
+Create a new class with the main method;
+Create an object of the previous class;
+Create a flow with JOptionPane to
+   1) fill the object,
+   2) display the information for that object.
+
+    STEP 1
+    Creat a Java Project with Two Java files. 
+    One for the main class and the other for the 
+    Object class
+
+    IN YOUR OBJECT CLASS eg. (Human)
+
+    STEP 2
+   Since we are going to work with dates. We need to 
+   imort 
+   1. Java.time.LocalDate
+   2. Java. time. MothDate
+   3. Java DateTimeFormatter: this helps to put the 
+       time in our desired format.
+
+    STEP 3
+
+    Creat a public class with private variables 
+
+    Creat setters and getters for our private variables 
+    Eg. setName and getname 
+
+    STEP 4
+    using the DateTimeFormatter declear you date 
+    parameters as needed 
+    An if statement is helpful for age claculation 
+
+    STEP 5
+    Using the toString method prepare your output
+
+    IN THE MAIN CLASS
+
+    STEP 1
+    Import your Java.time packages 
+            LocalDate
+            DateTimeFormatter
+            you need JOptionPane 
+    
+    declear your class
+
+    you need a public static void name() 
+
+    STEP 2
+
+    Creat and Object of the prvious class
+
+    Using the JOptionPane impute showInputDialog
+    get users information using the set method and store 
+    them in the right variable types 
+
+    display the info using JOptionPane and the 
+    toSting */
+
+        
+    
+
+
+
+     

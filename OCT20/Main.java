@@ -1,4 +1,4 @@
-
+package OCT20;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -17,8 +17,9 @@ public class Main {
                objHuman.setDateOfBirth(LocalDate.parse(dateOfBirth,formatBr));
 
                objHuman.setHeight(Double.parseDouble(JOptionPane.showInputDialog(null, "Enter Your Height")));
-               
 
+
+               JOptionPane.showMessageDialog(null, objHuman.toString());
 
 
 

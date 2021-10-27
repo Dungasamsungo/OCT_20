@@ -25,7 +25,7 @@ public class Human {
             }
             
             //date of birth setter and getter 
-            public void setDateOfBirth( localDate dateOfBirth){
+            public void setDateOfBirth( LocalDate dateOfBirth){
                 this.dateOfBirth = dateOfBirth;
             }
             
@@ -44,15 +44,15 @@ public class Human {
 
 
             public int age(){
-                DateTimeFormatter formatDateYYYY = DateTimeFormatter.ofPattern("yyyy");
+                DateTimeFormatter formatDateYYYY = DateTimeFormatter.ofPattern("YYYY");
                 LocalDate actualdate = LocalDate.now();
                 int yearOfBirth = Integer.parseInt(dateOfBirth.format(formatDateYYYY));
                 int actualYear = Integer.parseInt(actualdate.format(formatDateYYYY));
                 int age = actualYear - yearOfBirth;
 
-                DateTimeFormatter formatterMMdd =DateTimeFormatter.ofPattern(MMdd);
-                int monthDayOfBirth = Integer.parseInt(dateOfBirth.format(formatterMMdd));
-                int monthDayActual = Integer.parseInt(dateActual.format(formatterMMdd));
+                DateTimeFormatter formattMMdd =DateTimeFormatter.ofPattern("MMdd");
+                int monthDayOfBirth = Integer.parseInt(dateOfBirth.format(formattMMdd));
+                int monthDayActual = Integer.parseInt(actualdate.format(formattMMdd));
 
                 if (monthDayOfBirth > monthDayActual) {
                     age = age - 1;
